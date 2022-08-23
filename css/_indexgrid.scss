@@ -1,0 +1,20 @@
+/*Grid areas*/
+header {
+    grid-area: header;
+  }
+  footer {
+    grid-area: footer;
+  }
+  nav {
+    grid-area: nav;
+  }
+  .slider{
+    grid-area: slider;
+  }
+  .section-info{
+    grid-area: info;
+  }
+  .section-videos{
+    grid-area: videos;
+  }
+  /*Grid areas*/
