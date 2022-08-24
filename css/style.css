@@ -17,7 +17,7 @@
     font-size: 60px;
     margin: 20px;
   }
-  .tm {
+  header h1 span {
     font-size: 20px;
     text-align: center;
   }
@@ -66,43 +66,42 @@
     background-color: #333;
     position: unset;
   }
-  #PageTittle {
+  header h1 {
     font-family: "Quicksand", sans-serif;
     color: white;
     font-size: 50px;
     background-size: 70px;
     margin-left: 40%;
   }
-  .header div {
+  header h1 span {
+    font-size: 20px;
+    text-align: center;
+  }
+  header div {
     width: auto;
   }
-  .fa {
+  header div .fa {
     padding: 20px;
     text-align: center;
     margin: 5px 2px;
-    font-size: 30px;
     width: 55px;
     text-decoration: none;
     border-radius: 50%;
   }
-  .fa-facebook {
+  header div .fa-facebook {
     background: #3B5998;
     color: white;
   }
-  .fa-twitter {
+  header div .fa-twitter {
     background: #55ACEE;
     color: white;
   }
-  .fa-instagram {
+  header div .fa-instagram {
     background: #cf2f7f;
     color: white;
   }
-  .fa:hover {
+  header div .fa:hover {
     opacity: 0.9;
-  }
-  .tm {
-    font-size: 20px;
-    text-align: center;
   }
   /*header*/
   /*Nav Bar*/
@@ -114,10 +113,10 @@
     top: 0px;
     z-index: 100;
   }
-  div {
+  nav div {
     width: 100%;
   }
-  ul {
+  nav div ul {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
@@ -126,7 +125,7 @@
     overflow: hidden;
     background-color: #333;
   }
-  li a {
+  nav div ul li a {
     display: flex;
     justify-content: space-between;
     color: white;
@@ -137,15 +136,20 @@
     text-decoration: none;
     border-bottom: 3px solid rgba(255, 255, 255, 0);
   }
+  nav div ul li a .active {
+    color: rgb(82, 170, 185);
+  }
   li a:hover {
     border-bottom: 3px solid rgb(82, 170, 185);
     color: #3B5998;
   }
-  .active {
-    color: rgb(82, 170, 185);
-  }
   /*Nav Bar*/
   /*IndexSection*/
+  section {
+    text-align: center;
+    height: auto;
+    max-width: 100%;
+  }
   #AboutVocaloid {
     text-align: center;
     font-family: "Quicksand", sans-serif;
@@ -157,11 +161,6 @@
     font-family: "Quicksand", sans-serif;
     margin: 20px;
     padding: 20px;
-  }
-  section {
-    text-align: center;
-    height: auto;
-    max-width: 100%;
   }
   .slider-videos {
     background-color: #333;
@@ -265,4 +264,19 @@ nav {
 * {
   margin: 0;
   padding: 0;
+}
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+  margin-right: 15%;
+  list-style: none;
 }/*# sourceMappingURL=style.css.map */
